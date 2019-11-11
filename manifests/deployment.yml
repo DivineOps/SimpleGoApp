@@ -1,0 +1,16 @@
+apiVersion : apps/v1beta1
+kind: Deployment
+metadata:
+  name: divineopssimplegoapp 
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: divineopssimplegoapp 
+    spec:
+      containers:
+        - name: divineopssimplegoapp 
+          image: aksacrdemosasha.azurecr.io/divineopssimplegoapp
+          ports:
+          - containerPort: 80
