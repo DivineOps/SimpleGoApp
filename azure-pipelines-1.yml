@@ -9,11 +9,10 @@ trigger:
 pool:
   vmImage: 'ubuntu-latest'
 
-resources:
-  repositories:
-    - repository: tools
-      name: Tools
-      type: git
+repositories:
+  - repository: tools
+    name: Tools
+    type: git
 
 steps:
 - checkout: self
